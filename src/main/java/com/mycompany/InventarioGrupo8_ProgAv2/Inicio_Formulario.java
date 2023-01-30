@@ -4,6 +4,11 @@
  */
 package com.mycompany.InventarioGrupo8_ProgAv2;
 
+import java.awt.Color;
+import java.net.URL;
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
+
 /**
  *
  * @author Admin
@@ -15,6 +20,10 @@ public class Inicio_Formulario extends javax.swing.JFrame {
      */
     public Inicio_Formulario() {
         initComponents();
+        this.setLocationRelativeTo(null);
+        
+        
+        
     }
 
     /**
@@ -26,21 +35,127 @@ public class Inicio_Formulario extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        btnIngresoInv = new javax.swing.JButton();
+        btnSalidaInv = new javax.swing.JButton();
+        btnReporte = new javax.swing.JButton();
+        btnConfig = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jPanel1.setBackground(new java.awt.Color(0, 82, 153));
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 50)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("SISTEMA DE INVENTARIO");
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(42, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(29, 29, 29))
+        );
+
+        btnIngresoInv.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        btnIngresoInv.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/ingresoinv.png"))); // NOI18N
+        btnIngresoInv.setText("INGRESO AL INVENTARIO");
+        btnIngresoInv.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnIngresoInvActionPerformed(evt);
+            }
+        });
+
+        btnSalidaInv.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        btnSalidaInv.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/salidainv.png"))); // NOI18N
+        btnSalidaInv.setText("SALIDA DE INVENTARIO");
+        btnSalidaInv.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSalidaInvActionPerformed(evt);
+            }
+        });
+
+        btnReporte.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        btnReporte.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/reporteinv.png"))); // NOI18N
+        btnReporte.setText("GENERAR REPORTE");
+        btnReporte.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnReporteActionPerformed(evt);
+            }
+        });
+
+        btnConfig.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        btnConfig.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/configuraciones.png"))); // NOI18N
+        btnConfig.setText("CONFIGURACIÓN");
+        btnConfig.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnConfigActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(313, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(btnIngresoInv, javax.swing.GroupLayout.PREFERRED_SIZE, 662, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(btnSalidaInv, javax.swing.GroupLayout.PREFERRED_SIZE, 595, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(31, 31, 31)))
+                        .addGap(244, 244, 244))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(btnReporte, javax.swing.GroupLayout.PREFERRED_SIZE, 517, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(318, 318, 318))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(btnConfig, javax.swing.GroupLayout.PREFERRED_SIZE, 277, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(41, 41, 41))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(73, 73, 73)
+                .addComponent(btnIngresoInv)
+                .addGap(60, 60, 60)
+                .addComponent(btnSalidaInv)
+                .addGap(69, 69, 69)
+                .addComponent(btnReporte)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 115, Short.MAX_VALUE)
+                .addComponent(btnConfig, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(29, 29, 29))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnIngresoInvActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIngresoInvActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnIngresoInvActionPerformed
+
+    private void btnSalidaInvActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalidaInvActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnSalidaInvActionPerformed
+
+    private void btnReporteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReporteActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnReporteActionPerformed
+
+    private void btnConfigActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConfigActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnConfigActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +193,11 @@ public class Inicio_Formulario extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnConfig;
+    private javax.swing.JButton btnIngresoInv;
+    private javax.swing.JButton btnReporte;
+    private javax.swing.JButton btnSalidaInv;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
